@@ -32,7 +32,7 @@ public class Pet {
   private PetType type;
 
   @ManyToOne(fetch = FetchType.LAZY)
-  @JoinColumn(name = "owner_id", nullable = false)
+  @JoinColumn(name = "owner", nullable = false)
   private Customer customer;
 
   @Column(name = "birth_date")
